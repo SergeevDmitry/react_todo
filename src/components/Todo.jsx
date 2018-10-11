@@ -15,23 +15,23 @@ class Todo extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps');
-    console.log('nextProps', nextProps);
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    console.log('componentWillUpdate');
-    console.log('nextProps', nextProps);
-    console.log('nextState', nextState);
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log('shouldComponentUpdate');
-    console.log('nextProps', nextProps);
-    console.log('nextState', nextState);
-    return true;
-  }
+  // componentWillReceiveProps(nextProps) {
+  //   console.log('componentWillReceiveProps');
+  //   console.log('nextProps', nextProps);
+  // }
+  //
+  // componentWillUpdate(nextProps, nextState) {
+  //   console.log('componentWillUpdate');
+  //   console.log('nextProps', nextProps);
+  //   console.log('nextState', nextState);
+  // }
+  //
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   console.log('shouldComponentUpdate');
+  //   console.log('nextProps', nextProps);
+  //   console.log('nextState', nextState);
+  //   return true;
+  // }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.editing) {
@@ -40,9 +40,9 @@ class Todo extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    console.log('componentWillUnmount');
-  }
+  // componentWillUnmount() {
+  //   console.log('componentWillUnmount');
+  // }
 
   handleSubmit(event) {
     event.preventDefault();
