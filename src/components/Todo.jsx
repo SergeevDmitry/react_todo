@@ -34,9 +34,10 @@ class Todo extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log('componentDidUpdate');
-    console.log('prevProp', prevProps);
-    console.log('prevState', prevState);
+    if (this.state.editing) {
+      this.refs.title.focus();
+      this.refs.title.select();
+    }
   }
 
   componentWillUnmount() {
